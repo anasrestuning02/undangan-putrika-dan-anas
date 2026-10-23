@@ -839,7 +839,7 @@ margin-right: 15px;
 										</div>				
 										<div data-dce-title-color="#333333" class="elementor-element elementor-element-2cb4373 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="2cb4373" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:1400}" data-widget_type="heading.default">				
 											<div class="elementor-widget-container">					
-												<h2 class="elementor-heading-title elementor-size-default">Tamu Undangan</h2>				
+												<h2 class="elementor-heading-title elementor-size-default nama-tamu">Tamu Undangan</h2>				
 											</div>				
 										</div>				
 										<div data-dce-title-color="#333333" class="elementor-element elementor-element-e754120 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="e754120" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:1800}" data-widget_type="heading.default">				
@@ -2966,7 +2966,7 @@ window.addEventListener("scroll", function() {
 				</div>
 				<div data-dce-title-color="#444444" class="elementor-element elementor-element-a10a974 elementor-widget elementor-widget-heading" data-id="a10a974" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default">Tamu Undangan</p>				</div>
+					<p class="elementor-heading-title elementor-size-default nama-tamu">Tamu Undangan</p>				</div>
 				</div>
 				<div data-dce-title-color="#444444" class="elementor-element elementor-element-51800fb elementor-widget elementor-widget-heading" data-id="51800fb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -4266,7 +4266,20 @@ new Promise( ( resolve ) => {
 </script>
 <style id="e-addons-template-dynamic-f864b3a-inline">.elementor:is(.e-post-345805,.e-loop-item-345805) .elementor-element.elementor-element-f864b3a:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor:is(.e-post-345805,.e-loop-item-345805) .elementor-element.elementor-element-f864b3a > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image: url("foto-prewed3.jpeg");--e-bg-lazyload:url("foto-prewed3.jpeg");background-position: center center;background-size: cover;}</style><style id="e-addons-template-dynamic-8211d57-inline">.elementor:is(.e-post-345805,.e-loop-item-345805) .elementor-element.elementor-element-8211d57:not(.elementor-motion-effects-element-type-background), .elementor:is(.e-post-345805,.e-loop-item-345805) .elementor-element.elementor-element-8211d57 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image: url("foto-prewed3.jpeg");--e-bg-lazyload:url("foto-prewed3.jpeg");background-position: center center;background-size: cover;}</style>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"8c176fcb44334ee084dc23a91c928a72","r":1,"spa":2}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4e528f1abcacdde',t:'MTc5MjYzNzA2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4e528f1abcacdde',t:'MTc5MjYzNzA2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const namaTamu = urlParams.get('to');
+    
+    if (namaTamu) {
+        const semuaTeksTamu = document.querySelectorAll('.nama-tamu');
+        semuaTeksTamu.forEach(function(elemen) {
+            elemen.innerText = namaTamu;
+        });
+    }
+</script>
+</html>
+</body>
 </html>
 <!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com -->
 
